@@ -4,15 +4,25 @@
   box-sizing: border-box;
 }
 body {
-    background-color:rgb(246 248 250) ;
+    background-color:rgb(197, 199, 201) ;
 }
-.container {
+header .container {
     max-width: 900px auto;
-    margin: 0% auto;
+    margin: 0 auto;
+}
+
+header .container-top img {
+    max-width: 100px;
+    vertical-align: middle;
+}
+
+header .container-top span {
+    font-size: 3rem;
+
 }
 
 
-.box1 {
+header .box1 {
   width: 650px;
   height: 650px;
   background-color: white;
