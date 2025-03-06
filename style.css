@@ -53,6 +53,7 @@ vertical-align: middle;
 
 main {
     margin-top: 50px;
+    padding: 10px;
 }
 
 .card {
@@ -61,6 +62,124 @@ main {
     background-color: white;
 }
 
+.task-list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .task-item *{
     display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
 }
+
+.task-item::before {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid currentColor;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.task-item.task-done::before {
+    content: '\2714';
+    color: lightgreen;
+}
+
+.task-blu {
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    font-size: small;
+    color: white;
+    background-color: #007bff;
+    border-radius: 15px;
+
+}
+
+.task-item.task-undone::before {
+    content: 'x';
+    color: red;
+}
+
+.task-blus {
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    font-size: small;
+    color: white;
+    background-color: #007bff;
+    border-radius: 15px;
+}
+
+.task-lilla {
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    font-size: small;
+    color: white;
+    background-color: #cc6ef2;
+    border-radius: 15px;
+}
+
+.task-green {
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    font-size: small;
+    color: white;
+    background-color: #28a745;
+    border-radius: 15px;
+}
+
+.task-orange {
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    font-size:small;
+    color: white;
+    background-color: #fd7e14;
+    border-radius: 15px;
+}
+
+.task-pink {
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    font-size: small;
+    color: white;
+    background-color: #fc6caf;
+    border-radius: 15px;
+}
+
+.task-yellow {
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    font-size: small;
+    color: white;
+    background-color: #ffc107;
+    border-radius: 15px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.today {
+    padding-top: 20px;
+
+}
+
+
+
